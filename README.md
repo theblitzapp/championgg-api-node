@@ -1,19 +1,29 @@
-# championgg-api-node
-A node module wrapper for the Champion.GG API
+# Node.js Client for the Champion.GG API
+
+[![NPM](https://nodei.co/npm/@solomid/node-gg.png?mini=true)](https://www.npmjs.com/package/@solomid/node-gg)
+
+[![Build Status via Travis CI](https://travis-ci.org/solomidnet/championgg-api-node.svg?branch=master)](https://travis-ci.org/solomidnet/championgg-api-node)
+
+The official Champion.GG API Node.js Client.
 
 # installation
   ```
   npm i @solomid/node-gg
   ```
+  
+  If you really need an ES5 version:
+  ```
+  npm i @solomid/node-gg@1.1.0
+  ```
 
 # usage
 First, instantiate the wrapper with your api key
   ```
-  var GG = require('node-gg');
-  var gg = GG.init('YOUR_KEY');
+  const GG = require('node-gg');
+  const gg = GG.init('YOUR_KEY');
   ```
 
-Then you gain access to all current endpoints of the API! All but initialization require a callback function and some also require either `role` or `champion_name`, along with an optional object with ...options. These options are passed as query string params and are `page` and `limit`
+Then you gain access to all current endpoints of the API! All but initialization require a callback function and some also require either `role` or `champion_name`, along with an optional object with ...options. These options are passed as query string params and are `page` and `limit`.
 
 The methods are:
 
@@ -58,6 +68,3 @@ Method | Parameters |
 
 ## contributing
 Feel free to contribute, let's just try to keep it readable :)
-
-## Release History
-  * 1.0.0 Initial release

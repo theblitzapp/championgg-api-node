@@ -1,27 +1,14 @@
-var assert = require('assert');
-var GG = require('../index.js');
-var chai = require('chai');
-var expect = chai.expect;
+const assert = require('chai').assert;
+const GG = require('../index.js');
 
-describe('Failed calls', function () {
-  it('Missing key', function (done) {
-    expect(GG.init).to.throw('API Key required');
-    done();
-  });
-
-  it('Empty key', function (done) {
-    expect(GG.init.bind(GG, '')).to.throw('API Key required');
-    done();
-  });
-
-  it('Wrong key', function (done) {
-    var gg = GG.init('12345');
-    gg.statistics.all(function (err, res) {
-      expect(err).to.exist;
-      expect(err.error).to.equal('AuthError');
-      done();
+context('API Key Testing', function () {
+    specify('Missing key', function (done) {
+        assert.throws(GG.init, Error, 'API Key Required');
+        done();
     });
-  });
-});
 
-//All working calls are simple http gets, no need to throttle servers on test
+    specify('Empty key', function (done) {
+        assert.throws(GG.init.bind(GG, ''), Error, 'API Key Required');
+        done();
+    });
+});

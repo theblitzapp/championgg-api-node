@@ -1,16 +1,15 @@
-var stats = require('./lib/stats');
-var champs = require('./lib/champs');
+const champions = require('./lib/champions');
+const statistics = require('./lib/statistics');
 
-var key = null;
+function init(key) {
+  if (!key) throw new Error('API Key Required');
 
-function init(_key) {
-  if (!_key) throw new Error('API Key required');
-  key = _key;
-  stats.init(key);
-  champs.init(key);
+  statistics.init(key);
+  champions.init(key);
+
   return {
-    statistics: stats,
-    champions: champs
+    statistics: statistics,
+    champions: champions
   };
 }
 
