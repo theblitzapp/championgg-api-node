@@ -1,5 +1,5 @@
 {
-  "name": "node-gg",
+  "name": "@solomid/node-gg",
   "version": "1.1.0",
   "description": "Node wrapper for champion.gg API",
   "main": "index.js",

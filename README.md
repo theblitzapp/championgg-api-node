@@ -3,7 +3,7 @@ A node module wrapper for the Champion.GG API
 
 # installation
   ```
-  npm install node-gg
+  npm i @solomid/node-gg
   ```
 
 # usage
