@@ -35,7 +35,7 @@ Method | Parameters |
 `.champions.all` | `options`, `callback` |
 `.champions.specific` | `champId`, `options`, `callback` |
 `.champions.specificRole` | `champId`, `role`, `options`, `callback` |
-`.champions.specificMatchyp` | `champ1Id`, `champ2Id`, `role`, `options`, `callback` |
+`.champions.specificMatchup` | `champ1Id`, `champ2Id`, `role`, `options`, `callback` |
 
 
 # tests
