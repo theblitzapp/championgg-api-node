@@ -8,8 +8,8 @@ function init(key) {
   champions.init(key);
 
   return {
-    statistics: statistics,
-    champions: champions
+    statistics,
+    champions
   };
 }
 
