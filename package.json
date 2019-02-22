@@ -12,7 +12,14 @@
     "http",
     "api"
   ],
-  "contributors":[ {"name": "Pradyuman Vig"}, { "name": "Alejandro Baltra" } ],
+  "contributors": [
+    {
+      "name": "Pradyuman Vig"
+    },
+    {
+      "name": "Alejandro Baltra"
+    }
+  ],
   "license": "MIT",
   "devDependencies": {
     "chai": "^3.4.1",
@@ -25,5 +32,8 @@
   "bugs": {
     "url": "https://github.com/solomidnet/championgg-api-node/issues"
   },
-  "homepage": "https://github.com/solomidnet/championgg-api-node#readme"
+  "homepage": "https://github.com/solomidnet/championgg-api-node#readme",
+  "dependencies": {
+    "axios": "^0.18.0"
+  }
 }
